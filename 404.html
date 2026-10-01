@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sistema de Busca Normativa mudou de endereço</title>
+  <meta name="robots" content="noindex">
+  <script>
+    // Leva para o mesmo caminho e filtros no endereço novo (ex.: mapa.html, ?concessao=..., #id)
+    (function () {
+      var novo = 'https://busca-normativa.github.io/normativos-antt/';
+      var caminho = location.pathname.replace(/^\/normativos-antt\/?/, '').replace(/^index\.html$/, '');
+      location.replace(novo + caminho + location.search + location.hash);
+    })();
+  </script>
+  <meta http-equiv="refresh" content="0; url=https://busca-normativa.github.io/normativos-antt/">
+  <style>
+    body { font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; background: #f4f5f7; color: #0b0b0b; margin: 0; display: grid; place-items: center; min-height: 100vh; padding: 16px; box-sizing: border-box; }
+    @media (prefers-color-scheme: dark) { body { background: #0d0d0d; color: #fff; } a { color: #7fb2f5; } }
+    main { max-width: 520px; text-align: center; }
+    a { color: #1351b4; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>O sistema mudou de endereço</h1>
+    <p>O Sistema de Busca Normativa agora está em<br><a href="https://busca-normativa.github.io/normativos-antt/">busca-normativa.github.io/normativos-antt</a></p>
+    <p>Você será redirecionado automaticamente. Atualize seus favoritos.</p>
+  </main>
+</body>
+</html>
